@@ -1,0 +1,74 @@
+.b_tjext__btns {
+    position: relative;
+    display: inline-block;
+    overflow: inherit;
+}
+.b_tjext__btn {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background: #f4f7f9;
+    text-align: center;
+    vertical-align: bottom;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.b_tjext__btn span {
+    line-height: 34px;
+    width: 100%;
+    text-align: center;
+}
+
+.b_tjext__popup {
+    display: block;
+    position: absolute;
+    background-color: #f4f7f9;
+    border: 1px solid #dddddd;
+    width: 470px;
+    height: 400px;
+    top: -420px;
+}
+.b_tjext__popup-hide {
+    display: none;
+}
+.b_tjext__popup_list {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 10px 0 10px 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.b_tjext__popup_item {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+.b_tjext__popup_footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    padding: 10px;
+}
+.b_tjext__popup_footer input {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}

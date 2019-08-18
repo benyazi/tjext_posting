@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "TJext",
+  "description": "Расширение для удобного комментирования",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://tjournal.ru/*"],
+      "js": ["first.js"],
+      "run_at":"document_end"
+    },
+    {
+      "matches": ["https://tjournal.ru/*"],
+      "js": ["jquery-3.4.1.min.js"],
+      "css": ["styles.css"],
+      "run_at":"document_start"
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "https://leonardo.osnova.io/"
+  ]
+}
